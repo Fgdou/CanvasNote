@@ -10,6 +10,11 @@ module.exports = class Token {
      * expiration   - date
      */
     static async create(type, user, ip = null) {
+        if(!type)
+            throw "No type"
+        if(!user)
+            throw "No user"
+
         let token = new Token
         token.type = type
         token.user = user
@@ -25,6 +30,10 @@ module.exports = class Token {
     }
 
     static async get(type, value) {
+        if(!type)
+            throw "No type"
+        if(!value)
+            throw "No value"
 
         let token = new Token
 
