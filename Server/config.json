@@ -8,5 +8,12 @@
     "user": "Server",
     "password": "btrkXZay3cvtuMK3Z2Q3",
     "database": "CanvasNote"
+  },
+  "mail": {
+    "service": "gmail",
+    "auth": {
+      "user": "fabigoardou@gmail.com",
+      "pass": "ruybmwgbjkbgfqfd"
+    }
   }
 }
