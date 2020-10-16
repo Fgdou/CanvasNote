@@ -1,0 +1,12 @@
+{
+  "server": {
+    "host": "localhost",
+    "port": 8080
+  },
+  "mysql": {
+    "host": "fgdou.ovh",
+    "user": "Server",
+    "password": "btrkXZay3cvtuMK3Z2Q3",
+    "database": "CanvasNote"
+  }
+}

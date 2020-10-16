@@ -24,23 +24,39 @@ module.exports = class Mysql{
         })
     }
     static async queryFirst(sql, tab){
-        let response = await this.query(sql, tab)
-        if(!response.length)
-            throw("Not found")
-        return response[0]
+        try {
+            let response = await this.query(sql, tab)
+            if(!response.length)
+                throw("Not found")
+            return response[0]
+        }catch (e) {
+            throw(e)
+        }
     }
     static async exist(sql, tab){
-        let response = await this.query(sql, tab)
-        if(!response.length)
-            return false
-        return true
+        try {
+            let response = await this.query(sql, tab)
+            if(!response.length)
+                return false
+            return true
+        }catch (e) {
+            throw e
+        }
     }
     static async getBy(table, key, value){
-        let sql = `SELECT * FROM ${table} WHERE ${key} = ?`
-        let tab = [value]
-        return await this.query(sql, tab)
+        try {
+            let sql = `SELECT * FROM ${table} WHERE ${key} = ?`
+            let tab = [value]
+            return await this.query(sql, tab)
+        }catch (e) {
+            throw e
+        }
     }
     static async get(table){
-        return await this.query(`SELECT * FROM ${table}`)
+        try {
+            return await this.query(`SELECT * FROM ${table}`)
+        }catch (e) {
+            throw e
+        }
     }
 }
