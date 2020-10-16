@@ -44,6 +44,12 @@ module.exports = class Mysql {
         return await this.query(sql, tab)
     }
 
+    static async getFistBy(table, key, value) {
+        let sql = `SELECT * FROM ${table} WHERE ${key} = ?`
+        let tab = [value]
+        return await this.queryFirst(sql, tab)
+    }
+
     static async get(table) {
         return await this.query(`SELECT * FROM ${table}`)
     }
