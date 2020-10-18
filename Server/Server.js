@@ -1,14 +1,12 @@
-let Token = require("./Modules/Token");
+let express = require("express")
+let app = express()
+let canvasnote = require("./Controllers/CanvasNote")
+let config = require("./config.json")
 
-(async()=>{
-    try{
-        let t = await Token.create("login", 22)
-        console.log(t)
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-        let t2 = await Token.get("login", t.value)
-        console.log(t2)
-    }catch (e) {
-        console.log("Something went wrong");
-        console.log(e)
-    }
-})()
+app.use("/CanvasNote", canvasnote)
+
+app.listen(config.server.port)
+console.log(`Listinning on http://${config.server.host}:${config.server.port}`)

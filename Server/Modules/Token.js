@@ -39,7 +39,11 @@ module.exports = class Token {
 
         let sql = "SELECT * FROM Tokens WHERE type = ? AND value = ?"
         let tab = [type, value]
-        let response = await mysql.queryFirst(sql, tab)
+        let response = await mysql.queryFirst(sql, tab).catch(err=>{
+            if(err === "Not found")
+                throw "Token not found"
+            throw err
+        })
 
         token.type = response.type
         token.ip = response.ip

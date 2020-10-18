@@ -18,6 +18,7 @@ module.exports = class User{
         user.email = obj.email
         user.email_verified = obj.email_verified
         user.token = null
+        return user
     }
     static async getById(id){
         if(!id)
@@ -27,7 +28,7 @@ module.exports = class User{
     static async getByToken(tokenValue){
         if(!tokenValue)
             throw "No token value"
-        let tok = await Tokens.get("Users", tokenValue)
+        let tok = await Tokens.get("login", tokenValue)
         tok.throwNotValid()
 
         let user = this.parseFromOBJ(await this.getById(tok.user))
@@ -53,9 +54,9 @@ module.exports = class User{
             throw "No password"
         password = encodePassword(password)
 
-        if(await mysql.exist("Users", "email", email))
+        if(await mysql.existBy("Users", "email", email))
             throw "Email already exist"
-        if(await mysql.exist("Users", "username", username))
+        if(await mysql.existBy("Users", "username", username))
             throw "Username already exist"
 
         let sql = "INSERT INTO Users (username, password, last_login, email, email_verified) VALUES (?, ?, NOW(), ?, 0)"
@@ -84,15 +85,15 @@ module.exports = class User{
             throw "No password"
         password = encodePassword(password)
 
-        let user = this.getByEmail(email)
+        let user = await this.getByEmail(email)
         if(user.password !== password)
             throw "Wrong password"
         if(!user.email_verified)
             throw "Email not verified"
 
-        let token = await Tokens.create("login", user.id)
+        user.token = await Tokens.create("login", user.id)
 
-        return token.value
+        return user
     }
     static async verifyEmail(tokenValue){
         if(!tokenValue)
