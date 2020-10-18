@@ -20,13 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c9ff13e-63e0-4933-9627-bd08a0423e74" name="Default Changelist" comment="Add Server.js&#10;Correct some">
-      <change afterPath="$PROJECT_DIR$/Server/Controllers/CanvasNote.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/Controllers/Users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Modules/Mysql.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Modules/Mysql.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Modules/Token.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Modules/Token.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Controllers/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Controllers/Users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/Modules/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Modules/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Server.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +76,7 @@
       <updated>1603008229143</updated>
       <workItem from="1603008230584" duration="466000" />
       <workItem from="1603008705321" duration="5158000" />
+      <workItem from="1603013967733" duration="311000" />
     </task>
     <task id="LOCAL-00001" summary="Mysql.js : Change exist function&#10;Token.js : add throwNotValid&#10;User.js  : finish the class">
       <created>1603010489489</created>
@@ -105,6 +101,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Mysql.js : Change exist function&#10;Token.js : add throwNotValid&#10;User.js  : finish the class" />
@@ -124,22 +121,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="743" y="277" width="424" height="479" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603009025336" />
-    <state width="1899" height="276" key="GridCell.Tab.0.bottom" timestamp="1603013864830">
+    <state width="1899" height="276" key="GridCell.Tab.0.bottom" timestamp="1603014276323">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603013864830" />
-    <state width="1899" height="276" key="GridCell.Tab.0.center" timestamp="1603013864830">
+    <state width="1899" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603014276323" />
+    <state width="1899" height="276" key="GridCell.Tab.0.center" timestamp="1603014276322">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603013864830" />
-    <state width="1899" height="276" key="GridCell.Tab.0.left" timestamp="1603013864829">
+    <state width="1899" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603014276322" />
+    <state width="1899" height="276" key="GridCell.Tab.0.left" timestamp="1603014276321">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603013864829" />
-    <state width="1899" height="276" key="GridCell.Tab.0.right" timestamp="1603013864830">
+    <state width="1899" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603014276321" />
+    <state width="1899" height="276" key="GridCell.Tab.0.right" timestamp="1603014276323">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603013864830" />
+    <state width="1899" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603014276323" />
     <state x="464" y="154" key="SettingsEditor" timestamp="1603009062077">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

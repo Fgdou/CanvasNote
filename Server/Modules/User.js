@@ -124,4 +124,10 @@ module.exports = class User{
         let tab = [this.id]
         await mysql.query(sql, tab)
     }
+    async updateToken(){
+        let token = await Tokens.create("login", this.id)
+        this.token.use()
+        this.token = token
+        return token
+    }
 }

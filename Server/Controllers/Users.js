@@ -29,6 +29,12 @@ router.use("/:function", async (req, res) => {
                     case "delete":
                         await user.delete()
                         break;
+                    case "logout":
+                        await user.logout()
+                        break;
+                    case "updateToken":
+                        response.token = await user.updateToken()
+                        break;
                     default:
                         throw "Wrong function"
                 }
