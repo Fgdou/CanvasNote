@@ -31,7 +31,9 @@ module.exports = class Mysql {
         return response[0]
     }
 
-    static async exist(sql, tab) {
+    static async exist(table, key, value) {
+        let sql = `SELECT * FROM ${table} WHERE ${key} = ?;`
+        let tab = [value]
         let response = await this.query(sql, tab)
         if (!response.length)
             return false

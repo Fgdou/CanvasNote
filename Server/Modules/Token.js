@@ -87,6 +87,13 @@ module.exports = class Token {
         await mysql.query(sql, tab)
     }
 
+    throwNotValid(){
+        if(this.used)
+            throw "Token already used"
+        if((new Date()) > this.expiration)
+            throw "Token expired"
+    }
+
     isValid() {
         if (this.used === 1 || this.expiration < new Date())
             return false
