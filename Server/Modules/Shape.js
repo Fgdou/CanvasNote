@@ -52,14 +52,12 @@ module.exports = class Shape{
         await mysql.query(sql, tab)
     }
     async save(){
-        let sql = "INSERT INTO Shapes (page, shape, posX, posY, pressure, color) VALUES ?"
-        let tab = []
+        let sql = "INSERT INTO Shapes (page, shape, posX, posY, pressure, color) VALUES ?;"
+        let tab = [[]]
         for(let i=0; i<this.path.length; i++){
-            tab.push([this.page, this.id, this.path[i].x, this.path[i].y, this.path[i].pressure, this.color])
+            tab[0].push([this.page, this.id, this.path[i].x, this.path[i].y, this.path[i].pressure, this.color])
         }
         console.log(tab)
         await mysql.query(sql, tab)
-        //TODO fix SQL
-
     }
 }

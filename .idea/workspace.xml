@@ -19,11 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c9ff13e-63e0-4933-9627-bd08a0423e74" name="Default Changelist" comment="add users updateToken">
-      <change afterPath="$PROJECT_DIR$/Server/Modules/Page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/Modules/Shape.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/01a0f829-11e3-4861-82ef-020e879999e5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/01a0f829-11e3-4861-82ef-020e879999e5.xml" afterDir="false" />
+    <list default="true" id="4c9ff13e-63e0-4933-9627-bd08a0423e74" name="Default Changelist" comment="TODO fix SQL in shape save&#10;Crate page and shape class">
+      <change afterPath="$PROJECT_DIR$/Server/Test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Controllers/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Controllers/Users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Modules/Page.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Modules/Page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Modules/Shape.js" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Modules/Shape.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,17 +52,24 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.10.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="8.10.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Server/Test.js" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="SQL Resolution Scopes" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration name="Server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Server/Server.js" working-dir="$PROJECT_DIR$/Server">
+  <component name="RunManager" selected="Node.js.Test.js">
+    <configuration name="Server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="Server.js" working-dir="$PROJECT_DIR$/Server">
       <method v="2" />
     </configuration>
+    <configuration name="Test.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="Server/Test.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.Test.js" />
+      <item itemvalue="Node.js.Server.js" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.Server.js" />
@@ -79,7 +87,8 @@
       <workItem from="1603008230584" duration="466000" />
       <workItem from="1603008705321" duration="5158000" />
       <workItem from="1603013967733" duration="348000" />
-      <workItem from="1603027060399" duration="3611000" />
+      <workItem from="1603027060399" duration="3893000" />
+      <workItem from="1603877792475" duration="1913000" />
     </task>
     <task id="LOCAL-00001" summary="Mysql.js : Change exist function&#10;Token.js : add throwNotValid&#10;User.js  : finish the class">
       <created>1603010489489</created>
@@ -95,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603014305492</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="TODO fix SQL in shape save&#10;Crate page and shape class">
+      <created>1603030945452</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603030945452</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,37 +133,86 @@
     <MESSAGE value="Mysql.js : Change exist function&#10;Token.js : add throwNotValid&#10;User.js  : finish the class" />
     <MESSAGE value="Add Server.js&#10;Correct some" />
     <MESSAGE value="add users updateToken" />
-    <option name="LAST_COMMIT_MESSAGE" value="add users updateToken" />
+    <MESSAGE value="TODO fix SQL in shape save&#10;Crate page and shape class" />
+    <option name="LAST_COMMIT_MESSAGE" value="TODO fix SQL in shape save&#10;Crate page and shape class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="373" width="1187" height="287" key="#SQL_Dialects" timestamp="1603008991615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="373" width="1187" height="287" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1603008991615" />
-    <state x="418" y="177" width="1084" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603008756556">
+    <state x="418" y="177" width="1084" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603879395314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="418" y="177" width="1084" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603008756556" />
-    <state x="743" y="277" width="424" height="479" key="FileChooserDialogImpl" timestamp="1603009025336">
+    <state x="418" y="177" width="1084" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603879395314" />
+    <state x="743" y="277" width="424" height="479" key="FileChooserDialogImpl" timestamp="1603879389941">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="743" y="277" width="424" height="479" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603009025336" />
-    <state width="1308" height="276" key="GridCell.Tab.0.bottom" timestamp="1603029902101">
+    <state x="743" y="277" width="424" height="479" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603879389941" />
+    <state width="1899" height="341" key="GridCell.Tab.0.bottom" timestamp="1603879673106">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1308" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603029902101" />
-    <state width="1308" height="276" key="GridCell.Tab.0.center" timestamp="1603029902100">
+    <state width="1899" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603879673106" />
+    <state width="1899" height="341" key="GridCell.Tab.0.center" timestamp="1603879673105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1308" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603029902100" />
-    <state width="1308" height="276" key="GridCell.Tab.0.left" timestamp="1603029902100">
+    <state width="1899" height="341" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603879673105" />
+    <state width="1899" height="341" key="GridCell.Tab.0.left" timestamp="1603879673105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1308" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603029902100" />
-    <state width="1308" height="276" key="GridCell.Tab.0.right" timestamp="1603029902101">
+    <state width="1899" height="341" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603879673105" />
+    <state width="1899" height="341" key="GridCell.Tab.0.right" timestamp="1603879673105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1308" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603029902101" />
+    <state width="1899" height="341" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603879673105" />
+    <state width="1899" height="341" key="GridCell.Tab.1.bottom" timestamp="1603879673107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="341" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603879673107" />
+    <state width="1899" height="341" key="GridCell.Tab.1.center" timestamp="1603879673106">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="341" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603879673106" />
+    <state width="1899" height="341" key="GridCell.Tab.1.left" timestamp="1603879673106">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="341" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603879673106" />
+    <state width="1899" height="341" key="GridCell.Tab.1.right" timestamp="1603879673106">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="341" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603879673106" />
+    <state width="1899" height="341" key="GridCell.Tab.2.bottom" timestamp="1603879673107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="341" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603879673107" />
+    <state width="1899" height="341" key="GridCell.Tab.2.center" timestamp="1603879673107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="341" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603879673107" />
+    <state width="1899" height="341" key="GridCell.Tab.2.left" timestamp="1603879673107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="341" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603879673107" />
+    <state width="1899" height="341" key="GridCell.Tab.2.right" timestamp="1603879673107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="341" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603879673107" />
+    <state width="1899" height="341" key="GridCell.Tab.3.bottom" timestamp="1603879673108">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="341" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603879673108" />
+    <state width="1899" height="341" key="GridCell.Tab.3.center" timestamp="1603879673108">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="341" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603879673108" />
+    <state width="1899" height="341" key="GridCell.Tab.3.left" timestamp="1603879673108">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="341" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603879673108" />
+    <state width="1899" height="341" key="GridCell.Tab.3.right" timestamp="1603879673108">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="341" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603879673108" />
     <state x="464" y="154" key="SettingsEditor" timestamp="1603009062077">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -156,10 +221,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="200" height="441" key="SqlResolveConfigurable/0.0.1920.1040@0.0.1920.1040" timestamp="1603009059384" />
-    <state x="555" y="255" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1603014307893">
+    <state x="555" y="255" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1603030947121">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="555" y="255" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603014307893" />
+    <state x="555" y="255" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603030947121" />
     <state x="753" y="115" width="404" height="803" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1603027410165">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -168,5 +233,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="680" y="342" width="550" height="372" key="jetbrains.nodejs.interpreters-dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603008257028" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="NodeJSConfigurationType">
+        <watch expression="response['MAX(shape)']" language="JavaScript" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

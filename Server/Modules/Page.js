@@ -52,7 +52,7 @@ module.exports = class Page{
         let shapes = []
 
         for(let i=0; i<response.length; i++){
-            shapes.push(await Shape.get(this.id, response[i].id))
+            shapes.push(await Shape.get(this.id, response[i].shape))
         }
 
         return shapes
@@ -61,11 +61,11 @@ module.exports = class Page{
     async createShape(){
         let sql = "SELECT MAX(shape) FROM Shapes WHERE page = ?;"
         let tab = [this.id]
-        let response = mysql.queryFirst(sql, tab)
+        let response = await mysql.queryFirst(sql, tab)
 
         let shape = new Shape()
-        if(response.shape)
-            shape.id = response.shape + 1
+        if(response['MAX(shape)'])
+            shape.id = response['MAX(shape)'] + 1
         else
             shape.id = 1
         shape.page = this.id
