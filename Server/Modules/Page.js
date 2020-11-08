@@ -43,9 +43,9 @@ module.exports = class Page{
         await mysql.query(sql, tab)
 
     }
-    async getShapes(){
-        let sql = "SELECT DISTINCT shape FROM Shapes WHERE page = ?;"
-        let tab = [this.id]
+    async getShapes(start = 0){
+        let sql = "SELECT DISTINCT shape FROM Shapes WHERE page = ? AND shape >= ?;"
+        let tab = [this.id, start]
 
         let response = await mysql.query(sql, tab)
 
