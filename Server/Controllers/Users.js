@@ -20,7 +20,6 @@ router.use("/:function", async (req, res) => {
                 await users.create(req.body.username, req.body.email, req.body.password)
                 break;
             default:{
-                console.log(req.body.token)
                 let user = await users.getByToken(req.body.token)
                 switch(req.params.function){
                     case "get":

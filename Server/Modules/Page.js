@@ -14,6 +14,10 @@ module.exports = class Page{
     }
     static create(name, parent = 0){
         let page = new Page()
+
+        if(!parent)
+            parent = 0;
+
         page.name = name
         page.parent = parent
 

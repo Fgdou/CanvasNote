@@ -1,0 +1,140 @@
+{
+  "CanvasNote": {
+    "users": {
+      "login": {
+        "description": "Connect the user and get the token for using the API",
+        "parameters": {
+          "email" : "A string of the user mail",
+          "password" : "A string unencoded of the password"
+        },
+        "return": "the $user object with the new token",
+        "example": [
+          "{'email': 'test@example.com', 'password': 'qwerty'}",
+          "{success: true, user: {'id': 3, username: 'test', mail: 'test@example.com', last_login: 20-10-2021 10h30, token: d15z1z3q5s21d}}"
+        ]
+      },
+      "logout": {
+        "description": "Delete the token",
+        "parameters": {
+          "token": "The token of the current login"
+        },
+        "example": [
+          "{token: d15z1z3q5s21d}",
+          "{success: true}"
+        ]
+      },
+      "register": {
+        "description": "Create a new person in the database",
+        "parameters": {
+          "username": "A string of the public username of the person",
+          "email": "A valid email to connect and verify the account",
+          "password": "a unencoded password"
+        },
+        "example": [
+          "{username: 'test', email: 'test@example.com', password: 'qwerty'}",
+          "{success: true}"
+        ]
+      },
+      "verifyEmail": {
+        "description": "Verify the email by token in the mail sent after registration",
+        "parameters": {
+          "token (in query)": "the token sent by mail"
+        },
+        "example": [
+          "fgdou.ovh/CanvasNote/users/verifyEmail?token=d15z1z3q5s21d",
+          "{success: true}"
+        ]
+      },
+      "get": {
+        "description": "Get the connected user object",
+        "parameters": {
+          "token" : "The token of the current login"
+        },
+        "return": "The $user object if no connection error",
+        "example": [
+          "{token: d15z1z3q5s21d}",
+          "{success: true, user: {'id': 3, username: 'test', mail: 'test@example.com', last_login: 20-10-2021 10h30}}"
+        ]
+      },
+      "delete": {
+        "description": "Delete the connected user",
+        "parameters": {
+          "token": "The token of the current login"
+        },
+        "example": [
+          "{token: d15z1z3q5s21d}",
+          "{success: true}"
+        ]
+      },
+      "updateToken": {
+        "description": "Get a new token and destroy the orl one",
+        "parameters": {
+          "token": "The token of the current login"
+        },
+        "return": "The new connection token",
+        "example": [
+          "{token: d15z1z3q5s21d}",
+          "{success: true, newToken: efzefezf542515341}"
+        ]
+      }
+    },
+    "page": {
+      "create": {
+        "description": "Create a page for drawing",
+        "parameters": {
+          "name": "A string of the name for the page",
+          "parent": "(Default: 0) The id of an other page, if there is one."
+        },
+        "example": [
+          "{name: 'Maths', parent: 0}",
+          "{success: true}"
+        ]
+      },
+      "delete": {
+        "description": "Delete forever the page",
+        "parameters": {
+          "page": "The id of the page"
+        },
+        "example": [
+          "{page: 8}",
+          "{success: true}"
+        ]
+      },
+      "getShapes": {
+        "description": "Get all the shapes of a page, everything for drawing",
+        "parameters": {
+          "page": "The id a the page",
+          "last": "Tell the API to not give the shape bellow the number (get only the new ones)"
+        },
+        "return": "An array of shapes objects",
+        "example": [
+          "{page: 8, last: 1}",
+          "{success: true, shapes:{{id: 2, page: 8, color: 'red', path: [...]}, {id: 3, page: 8, color: 'green', path: [...]}}}"
+        ]
+      },
+      "createShape": {
+        "description": "Put a shape on the page",
+        "parameters": {
+          "page": "The id of the page",
+          "shapes" : "An array of shapes like {pos: {x: 1, y: 2}, pressure: 0.5}"
+        },
+        "return": "The id of the shape",
+        "example": [
+          "{page: 8, shapes: {{pos: {x: 1, y: 1}, pressure: 0.1},{pos: {x: 2, y: 2}, pressure: 0.9}}}",
+          "{success: true, shape: 3}"
+        ]
+      },
+      "deleteShape": {
+        "description": "Delete a shape on a given page",
+        "parameters": {
+          "page": "The id of the page",
+          "shape": "The id of the shape"
+        },
+        "example": [
+          "{page: 8, shape: 3}",
+          "{success: true}"
+        ]
+      }
+    }
+  }
+}

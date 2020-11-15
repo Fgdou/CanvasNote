@@ -110,7 +110,7 @@ module.exports = class User{
         let tab = [user.id]
         await mysql.query(sql, tab)
 
-        token.use()
+        await token.use()
         return user
     }
 

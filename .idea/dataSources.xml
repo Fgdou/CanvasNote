@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Fgdou.ovh" uuid="01a0f829-11e3-4861-82ef-020e879999e5">
+    <data-source source="LOCAL" name="Fgdou" uuid="20d0da00-8c61-4b49-9b15-847b1e9f8aaa">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
