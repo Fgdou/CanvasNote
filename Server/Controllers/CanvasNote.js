@@ -1,9 +1,9 @@
 let express = require("express")
 let router = express.Router()
 let users = require("./Users")
-let page = require("./Page")
+let pages = require("./Page")
 
 router.use("/users", users)
-router.use("/page", page)
+router.use("/page", pages)
 
 module.exports = router

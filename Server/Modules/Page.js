@@ -48,6 +48,9 @@ module.exports = class Page{
 
     }
     async getShapes(start = 0){
+        if(!start)
+            start = 0
+
         let sql = "SELECT DISTINCT shape FROM Shapes WHERE page = ? AND shape >= ?;"
         let tab = [this.id, start]
 
@@ -60,7 +63,7 @@ module.exports = class Page{
         }
 
         return shapes
-
+        //TODO fix when get page 5
     }
     async createShape(){
         let sql = "SELECT MAX(shape) FROM Shapes WHERE page = ?;"

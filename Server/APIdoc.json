@@ -10,7 +10,7 @@
         "return": "the $user object with the new token",
         "example": [
           "{'email': 'test@example.com', 'password': 'qwerty'}",
-          "{success: true, user: {'id': 3, username: 'test', mail: 'test@example.com', last_login: 20-10-2021 10h30, token: d15z1z3q5s21d}}"
+          "{success: true, user: {'id': 3, username: 'test', mail: 'test@example.com', last_login: 20-10-2021 10h30, token: ...}}"
         ]
       },
       "logout": {
@@ -74,7 +74,7 @@
         "return": "The new connection token",
         "example": [
           "{token: d15z1z3q5s21d}",
-          "{success: true, newToken: efzefezf542515341}"
+          "{success: true, newToken: ...}"
         ]
       }
     },
@@ -104,7 +104,7 @@
         "description": "Get all the shapes of a page, everything for drawing",
         "parameters": {
           "page": "The id a the page",
-          "last": "Tell the API to not give the shape bellow the number (get only the new ones)"
+          "last": "(default: 0) Tell the API to not give the shape bellow the number (get only the new ones)"
         },
         "return": "An array of shapes objects",
         "example": [
@@ -116,7 +116,7 @@
         "description": "Put a shape on the page",
         "parameters": {
           "page": "The id of the page",
-          "shapes" : "An array of shapes like {pos: {x: 1, y: 2}, pressure: 0.5}"
+          "path" : "An array of path like {pos: {x: 1, y: 2}, pressure: 0.5}"
         },
         "return": "The id of the shape",
         "example": [

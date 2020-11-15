@@ -19,7 +19,7 @@ router.use("/:function", async (req, res) => {
             }
             case "delete": {
                 let p = await pages.get(req.body.page)
-                await p.remove()
+                await p.delete()
                 break
             }
             case "getShapes": {
@@ -30,8 +30,14 @@ router.use("/:function", async (req, res) => {
             case "createShape": {
                 let p = await pages.get(req.body.page)
                 let shape = await p.createShape();
-                for(let i in req.body.shapes){
-                    let point = req.body.shapes[i]
+
+                if(!req.body.path)
+                    throw "No path"
+
+                let path = JSON.parse(req.body.path)
+
+                for(let i in path){
+                    let point = path[i]
                     shape.add(point.pos, point.pressure)
                 }
                 await shape.save();
@@ -46,8 +52,11 @@ router.use("/:function", async (req, res) => {
             default:
                 throw "Wrong function"
         }
+        res.send(response)
     }catch (e) {
         console.log(e)
         res.send({error: e})
     }
 })
+
+module.exports = router
