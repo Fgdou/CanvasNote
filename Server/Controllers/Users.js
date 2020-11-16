@@ -14,6 +14,7 @@ router.use("/:function", async (req, res) => {
                 await users.verifyEmail(req.query.token)
                 break;
             case "login":
+                //TODO do not send the password
                 response.user = await users.login(req.body.email, req.body.password)
                 break;
             case "register":
@@ -23,6 +24,7 @@ router.use("/:function", async (req, res) => {
                 let user = await users.getByToken(req.body.token)
                 switch(req.params.function){
                     case "get":
+                        //TODO do not send the password
                         response.user = user
                         break;
                     case "delete":
