@@ -3,7 +3,11 @@ let router = express.Router()
 let users = require("./Users")
 let pages = require("./Page")
 
-router.use("/users", users)
-router.use("/page", pages)
+let fs = require("fs")
+let path = require("path")
+
+router.use("/users",require("./Users"))
+router.use("/page", require("./Page"))
+router.use("/html", require("./html"))
 
 module.exports = router
