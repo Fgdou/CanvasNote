@@ -19,8 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c9ff13e-63e0-4933-9627-bd08a0423e74" name="Default Changelist" comment="changed the package.json file">
+    <list default="true" id="4c9ff13e-63e0-4933-9627-bd08a0423e74" name="Default Changelist" comment="added my ejs">
+      <change afterPath="$PROJECT_DIR$/Server/express.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +60,12 @@
     <property name="javascript.nodejs.core.library.configured.version" value="8.10.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="8.10.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Server/Test.js" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -129,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605534617073</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added my ejs">
+      <created>1605535043198</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605535043198</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +170,8 @@
     <MESSAGE value="TODO fix SQL in shape save&#10;Crate page and shape class" />
     <MESSAGE value="Add API documentation&#10;Add page controller" />
     <MESSAGE value="changed the package.json file" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed the package.json file" />
+    <MESSAGE value="added my ejs" />
+    <option name="LAST_COMMIT_MESSAGE" value="added my ejs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="373" width="1187" height="287" key="#SQL_Dialects" timestamp="1603008991615">
@@ -254,6 +271,10 @@
     </state>
     <state width="1899" height="341" key="GridCell.Tab.3.right/0.0.1920.1040/1920.0.1680.1050@0.0.1920.1040" timestamp="1605450440981" />
     <state width="1899" height="341" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603879673108" />
+    <state x="358" y="229" key="MultipleFileMergeDialog" timestamp="1605535061971">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="358" y="229" key="MultipleFileMergeDialog/0.0.1440.900@0.0.1440.900" timestamp="1605535061971" />
     <state x="464" y="154" key="SettingsEditor" timestamp="1605444937819">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -263,10 +284,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="200" height="441" key="SqlResolveConfigurable/0.0.1920.1040@0.0.1920.1040" timestamp="1603009059384" />
-    <state x="416" y="221" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1605534793235">
+    <state x="416" y="221" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1605535069637">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="416" y="221" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605534793235" />
+    <state x="416" y="221" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605535069637" />
     <state x="555" y="255" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1680.1050@0.0.1920.1040" timestamp="1605449475517" />
     <state x="555" y="255" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603030947121" />
     <state x="693" y="327" width="524" height="379" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1605450009478">

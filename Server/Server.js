@@ -1,10 +1,6 @@
-let express = require("express")
-let app = express()
+const app = require('./express')
 let canvasnote = require("./Controllers/CanvasNote")
 let config = require("./config.json")
-
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
 
 app.use("/CanvasNote", canvasnote)
 
